@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Student Registration Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="RegistrationFormDesign/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="RegistrationFormDesign/css/style.css">
+		
+		
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+		
+			<div class="inner">
+				<form action="StudentRegForm.php" method="POST">
+					<h3>Student Registration Form</h3>
+					<p>Department of Computer Science & Engineering</p>
+					<label class="form-group">
+						<input type="text" class="form-control" name="sname" placeholder="" pattern="" required>
+						<span>Name</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" name="usn" placeholder="" pattern="" required>
+						<span>USN</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="email" class="form-control" name="email" placeholder="" pattern="" required />
+						<span>Mail</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="date" class="form-control" name="sdob" placeholder="" pattern="" required>
+						<span>DOB</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" name="sph" placeholder="" pattern="[6789][0-9]{9}" required>
+						<span>Mobile</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" name="father" placeholder="" pattern="" required>
+						<span>Father Name</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" name="sfph" placeholder="" pattern="[6789][0-9]{9}" required>
+						<span>Father Mobile</span>
+						<span class="border"></span>
+					</label>
+					<label>
+						<h4>
+						<input type="radio" name="syear" value="2ndYear" /> <span>2nd Year</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<input type="radio" name="syear" value="3rdYear" /> <span>3rd Year</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<input type="radio" name="syear" value="4thYear" /> <span>4th Year</span>
+						</h4>
+						<br><br>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control"  name="sx" min="1" max="100" step="0.01" required>
+						<span>X Percentage</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="month" class="form-control" style="width: 45%;" name="sxyop" required>
+						<span>X YOP</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control" style="width: 45%;" name="sxii" min="1" max="100" step="0.01" required>
+						<span>XII Percentage</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="month" class="form-control" style="width: 45%;" name="sxiiyop" required>
+						<span>XII YOP</span>
+						<span class="border"></span>
+					</label>
+					<label>I Sem</label><input type="number" class="form-c" name="si" min="1" max="10" step="0.01" required><br><br>
+					<label>II Sem</label><input type="number" class="form-c" name="sii" min="1" max="10" step="0.01" required><br><br>
+					<label>III Sem</label><input type="number" class="form-c" name="siii" min="1" max="10" step="0.01" ><br><br>
+					<label>IV Sem</label><input type="number" class="form-c" name="siv" min="1" max="10" step="0.01" ><br><br>
+					<label>V Sem</label><input type="number" class="form-c" name="sv" min="1" max="10" step="0.01" ><br><br>
+					<label>VI Sem</label><input type="number" class="form-c" name="svi" min="1" max="10" step="0.01" ><br><br>
+					<label>VII Sem</label><input type="number" class="form-c" name="svii" min="1" max="10" step="0.01" ><br><br>
+					<label>VIII Sem</label><input type="number" class="form-c" name="sviii" min="1" max="10" step="0.01" ><br><br>
+					
+					<button>Submit 
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+					
+					
+				</form>
+				
+				<form action="/rljit_cse/index.html"><button>Back<i></i></button></form>
+			</div>
+		</div>
+		
+	</body>
+</html>

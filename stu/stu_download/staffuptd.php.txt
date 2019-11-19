@@ -1,0 +1,50 @@
+<!--
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Staff Update Page</title>
+    <link rel="stylesheet" href="style.css.css">
+</head>
+<body style="background-color:black">
+    <div id="main-wrapper">
+
+    <center><h2>STAFF UPDATE</h2>
+    <table>
+    <form action="staffupdateins.php" method="POST">
+         <div class="inner_container">
+	      <tr><td><b>Staff Username:</b></td>
+            <td> <input type="text" name="username" value= <?php echo $_GET['username']; ?> ><br></td></tr>
+             
+			 <tr><td><b>Staff Password:</b></td>
+             <td> <input type="text" name="password" value= <?php echo $_GET['password']; ?> ><br></td></tr>
+			 
+			  <tr><td><b>Staff Email:</b></td>
+             <td> <input type="email" name="email" value= <?php echo $_GET['email']; ?> ><br></td></tr>
+		     
+			 <tr><td><b>Department:</b></td>
+            <td> <input type="text" name="department" value= <?php echo $_GET['department']; ?> ><br></td></tr>
+			
+			<tr><td><b>Stubject:</b></td>
+            <td> <input type="text" name="subject" value= <?php echo $_GET['subject']; ?> ><br></td></tr>
+			
+			<tr><td><b>Qualification:</b></td>
+            <td> <input type="text" name="qualification" value= <?php echo $_GET['qualification']; ?> ><br></td></tr>
+			
+			<tr><td><b>Address:</b></td>
+            <td> <input type="text" name="address" value= <?php echo $_GET['address']; ?> ><br></td></tr>
+			
+			<tr><td><b>Salary:</b></td>
+            <td> <input type="text" name="salary" value= <?php echo $_GET['salary']; ?> ><br></td></tr>
+			
+			<tr><td><b>Description:</b></td>
+            <td> <input type="text" name="description" value= <?php echo $_GET['description']; ?> ><br></td></tr>
+         </div>
+           <tr> <td><midle>  <input type="submit" value="UPDATE" class="submit_btn"></midle></td></tr>
+    </form>
+     <td><a href="staffview.php"><button type="button" class="back_btn"> Back </button></a></td>
+   
+    </form>
+    </center>   
+</body>
+</html>
+-->

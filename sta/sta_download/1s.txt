@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>Registration</title>
+	
+	<style type="text/css" media="all">
+       body {
+			background-image: url(data:image/jpeg;base64,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);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-size: 2000px 20000px; 
+			background-position: center;
+			background-color: red;
+		}
+	   form {
+			position: relative;
+			width: 250px;
+			margin: 0 auto;
+			background: rgba(130,130,130,.0);
+			padding: 20px 22px;
+			border: 4px solid;
+			border-top-color: rgba(255,255,255,.4);
+			border-left-color: rgba(255,255,255,.4);
+			border-bottom-color: rgba(60,60,60,.4);
+			border-right-color: rgba(60,60,60,.4);
+			margin: 150 auto;
+			min-width: 0;
+			width: auto;
+			display: outline;
+			
+			
+		}
+		
+	   .content {
+				max-width: 650px;
+				margin: auto;
+				
+		}
+		#site-title h1{
+						margin: .5em auto .6em;
+						padding: 0;
+						line-height: 1.2em;
+						font-weight: 300;
+						font-size: 2.6em;
+						font-style: normal;
+						text-transform: uppercase;
+						letter-spacing: .055em;
+						position: relative;
+						left: 10px;
+		}
+		.btn-primary{
+					align:center;
+					padding: 10px 20px;
+                    font-size: 15px;
+					border-radius: 10px;
+					
+		}
+		img.mini {
+					display: block;
+					margin: 0 auto;
+					
+					
+		}
+		fieldset{
+		          width: 90%;
+				  border: 2px solid #cccccc;
+		}
+		
+	</style>
+	
+  </head>
+  <body>
+    <div>
+	<div class="logomini">
+	  <span class="site-title h1">
+	    <a href="https://www.interbeing.in/" rel="home">
+		<p align="center">
+		  <img class="mini" src="https://www.interbeing.in/wp-content/uploads/2018/08/pic1.jpg" alt="Interbeing" height="200" width="450" style>
+		  <img class="mini" src="https://www.interbeing.in/wp-content/uploads/2018/08/ENGGNODE.jpg" alt="Interbeing" height="200" width="450" style>
+		 </p>
+		 </a>
+		</span>
+	</div>
+	
+	
+	
+	
+	</div>
+	
+	
+	<form action="1stPageStudent.php" method="POST">
+	
+    <div class="content">
+	
+    
+	<fieldset>
+	<legend><b>Personal Information :</b></legend>
+	<div class="form-group">
+	<div class="form-row">
+    <div class="form-group col-md-5">
+      <label>Name</label><input type="text" class="form-control" placeholder="Name" name="name" required>
+    </div>
+  </div>
+  <br>
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email" required>
+    </div>
+  </div>
+  <br>
+  <div class="form-row">
+    <div class="form-group col-md-11">
+      <label for="smobile">Mobile</label>
+      <input type="number" class="form-controls" id="smobiie" placeholder="+91" name="ph1" required>
+    </div>
+  </div>
+  <br>
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label>Father's Name</label><input type="text" class="form-control" placeholder="Father Name" name="fname" required>
+    </div>
+  </div>
+  <br>
+    <div class="form-row">
+    <div class="form-group col-md-11">
+      <label for="smobile">Father's Mobile</label>
+      <input type="number" class="form-controls" id="fmobiie" placeholder="+91" name="ph2" required>
+    </div>
+  </div>
+  <br>
+  
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label for="github">Github</label>
+      <input type="text" class="form-control" id="github" name="github">
+    </div>
+  </div>
+  <br>
+  <div class="form-row">
+   <div class="form-group col-md-5">
+      <label for="facebook">Facebook</label>
+      <input type="text" class="form-control" id="facebook" name="fb">
+   </div>
+  </div>
+	<br>
+  <div class="form-row">
+	<div class="form-group col-md-5">
+      <label for="linkedin">LinkedIn</label>
+      <input type="text" class="form-control" id="linkedin" name="lin">
+    </div>
+  </div>
+  </div>
+  <br>
+  </fieldset>
+  <br>
+  <br>
+  <br>
+  
+<fieldset>
+	<legend><b>Academics :</b></legend>
+<div class="form-group">
+	<div class="form-row col-md-5">
+      <label for="10">10th YOP</label>
+      <input type="number" class="form-control" id="10" name="10y" min="1950" max="2019">
+    </div>
+		<div class="form-row col-md-5">
+      <label for="10p">10th %</label>
+      <input type="number" class="form-control" id="10p" name="10p" min="1" max="100" step="0.01" >
+      </div>
+	  <div class="form-row col-md-5">
+      <label for="12">12th/Diploma YOP</label>
+      <input type="number" class="form-control" id="10" name="12y" min="1950" max="2019">
+    </div>
+		<div class="form-row col-md-5">
+      <label for="12p">12th/Diploma %</label>
+      <input type="number" class="form-control" id="10p" name="12p" min="1" max="100" step="0.01" >
+      </div>
+	  <div class="form-row col-md-5">
+      <label for="stream">12th/Diploma Stream</label>
+      <input type="text" class="form-control" id="10p" name="12strm">
+	  </div>
+	  
+	  <div class="form-row col-md-5">
+      <label for="deg">Degree</label>
+      <input type="text" class="form-control" id="10p" name="deg">
+	  </div>
+	  <div class="form-row col-md-5">
+      <label for="dstream">Degree Stream</label>
+      <input type="text" class="form-control" id="10p" name="degstrm">
+	  </div>
+	  <div class="form-row col-md-5">
+      <label for="10">Degree YOP</label>
+      <input type="number" class="form-control" id="10" name="dyop" min="1950" max="2023">
+    </div>
+      </div>
+	  <br>
+	  <br>
+	</fieldset>
+<br><br><br>
+
+
+	
+	<fieldset>
+	<div>
+	<label>
+	       Purpose of Visit : 
+		   <select name="purpose" required>
+         		   <option value="Project" >Project</option>
+				   <option value="Job" >Job</option>
+				   <option value="Course" >Course</option>
+				   <option value="Internship" >Internship</option>
+				   <option value="Placement" >Placement</option>
+			</select>
+	</label>
+	</div>
+	</fieldset>
+	<br><br><br>
+	
+	<fieldset>
+	<label>
+	       How did you find us? : 
+		   <select name="howufind" required>
+         		   <option value="CollegeSeminar"> College Seminar</option>
+				   <option value="Leaflets">Leaflets</option>
+				   <option value="JustDail">Just Dail</option>
+				   <option value="Sulekha">Sulekha</option>
+				   <option value="PaperInsert">Paper Insert</option>
+				   <option value="Website">Website</option>
+				   <option value="Hoarding">Hoarding</option>
+				   <option value="WordOfMouth">Word of Mouth</option>
+				   <option value="Other">Other </option>
+			</select>
+	</label>
+	</fieldset>
+	<br><br><br>
+	
+	<fieldset>
+	<label>
+	       
+		   
+				<input type="radio" name="freshemp" value="Fresher"> Fresher <br>
+				<input type="radio" name="freshemp" value="Employee"> Employee <br>
+		   
+	</label>
+	</fieldset>
+	<br><br><br>
+	
+	<br>
+	<p align="center">
+	  <button type="submit" name="submit" class="btn btn-primary" value="Submit">Submit</button>
+	  <button type="reset" class="btn btn-primary" value="Reset">Reset</button>
+	</p>
+	
+  </form>	
+ 
+ 	
+  </body>
+ </html>
